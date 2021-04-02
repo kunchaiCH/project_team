@@ -17,6 +17,12 @@
     /* height: 20cm; */
     padding-bottom: 5rem;
 }
+
+.list_technician #profile h8 {
+    display: grid;
+    background: #343C43;
+    font-size: 3rem;
+}
 #navbar a {
     float: left;
     display: block;
