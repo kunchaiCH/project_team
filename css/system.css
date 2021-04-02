@@ -1,0 +1,58 @@
+@font-face{
+    src: url(font/Kanit-Regular);
+    font-family: Kanit;
+}
+.list_navbar{
+    background-color:#343C43;
+    height: 50px;
+    font-family: Kanit;
+}
+.list_slide{
+    background-color: rgb(255, 255, 255);
+    /* height: 12cm; */
+    font-family: Kanit;
+}
+.list_technician{
+    background-color: #EEEEEE;
+    /* height: 20cm; */
+    padding-bottom: 5rem;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+#navbar a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+#navbar a.active {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+/* .container .img1 .img2{
+    background-color:#a8a8a8;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+} */
+.container .img1{
+    /* background-color: #343C43; */
+    background-image: url('../image/4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 40px;
+}
+
+.profile_1{
+    margin: 50px;
+    background-color: aqua;
+}
+.profile_2{
+    background-color: #EEEEEE;
+}
