@@ -16,6 +16,12 @@ extract($row);
     <form action="admin_editDB.php" method="POST">
     <input type="hidden" name="ID" value="<?php echo $ID ?>">
     <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">username</label>
+        <div class="col-sm-6">
+            <input type="text" name="username" class="form-control" id="ชื่อ" value="<?=$username;?>">
+        </div>
+    </div>
+    <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">ชื่อ</label>
         <div class="col-sm-6">
             <input type="text" name="ชื่อ" class="form-control" id="ชื่อ" value="<?=$ชื่อ;?>">
@@ -30,7 +36,7 @@ extract($row);
     <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">อาชีพ</label>
         <div class="col-sm-6">
-            <input type="text" name="อาชีพ" class="form-control" id="อาชีพ" value="<?=$อาชีพ;?>">
+            <input type="text" name="ประเภท" class="form-control" id="ประเภท" value="<?=$ประเภท;?>">
         </div>
     </div>
     <div class="row mb-3">
@@ -55,18 +61,6 @@ extract($row);
         <label for="credit" class="col-sm-2 col-form-label">เบอร์โทร</label>
         <div class="col-sm-6">
             <input type="text" name="เบอร์โทร" class="form-control" id="เบอร์โทร"value="<?=$เบอร์โทร;?>">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="credit" class="col-sm-2 col-form-label">email</label>
-        <div class="col-sm-6">
-            <input type="text" name="email" class="form-control" id="ที่อยู่"value="<?=$email;?>">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="credit" class="col-sm-2 col-form-label">password</label>
-        <div class="col-sm-6">
-            <input type="text" name="password" class="form-control" id="password"value="<?=$password;?>">
         </div>
     </div>
     
