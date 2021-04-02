@@ -18,7 +18,6 @@
                 <?php include("slide.php");?>
             </div>
             <div class="col-12 list_technician">
-                <p>kunchai</p>
                 <?php
                 if($profile)
                 {

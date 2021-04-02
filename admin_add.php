@@ -5,9 +5,16 @@
   <div class="row">
     <div class="col-md-6 offset-md-3">
     <form class="row g-3" action="admin_addDB.php" method="POST">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <label for="validationDefault01" class="form-label">username</label>
             <input type="text" name="username" class="form-control"required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputState" class="form-label">Select Type</label>
+            <select name="role" class="form-control"required placeholder="Enter Select Role">
+                    <option value="" selected="selected">- Select Role -</option>
+                    <option>Employee</option>
+            </select>
         </div>
         <div class="col-md-6">
             <label for="validationDefault01" class="form-label">ชื่อ</label>
@@ -49,6 +56,14 @@
         <div class="col-md-6">
             <label for="validationDefault05" class="form-label">เบอร์โทรศัพท์</label>
             <input type="text" name="เบอร์โทร" class="form-control"required>
+        </div><br>
+        <div class="col-md-6">
+            <label for="validationDefault05" class="form-label">email</label>
+            <input type="text" name="email" class="form-control"required>
+        </div><br>
+        <div class="col-md-6">
+            <label for="validationDefault05" class="form-label">password</label>
+            <input type="password" name="password" class="form-control"required>
         </div><br>
         <div class="col-12">
             <button type="submit" class="btn btn-primary">บันทึก</button>

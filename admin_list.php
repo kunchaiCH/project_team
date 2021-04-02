@@ -3,7 +3,7 @@
 <br>
 <a href="admin_home.php?act=add"><button type="button" class="btn btn-secondary">เพิ่มข้อมูล</button></a><p></p>
 <?php
-$query = "SELECT * FROM นายช่าง ORDER BY id ASC" or die("Error:" . mysqli_error());
+$query = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username" or die("Error:" . mysqli_error());
 $result = mysqli_query($con, $query);
 echo ' <table class="table table-dark table-hover">';
 echo '
@@ -16,6 +16,8 @@ echo '
         <td>ราคา</td>
         <td>ที่อยู่</td>
         <td>เบอร์โทรศัพท์</td>
+        <td>email</td>
+        <td>password</td>
         <td>แก้ไข</td>
         <td>ลบ</td>
     </tr>';
@@ -30,6 +32,8 @@ echo '
             echo "<td>" .$row1["ราคา"] .  "</td> ";
             echo "<td>" .$row1["ที่อยู่"] .  "</td> ";
             echo "<td>" .$row1["เบอร์โทร"] .  "</td> ";
+            echo "<td>" .$row1["email"] .  "</td> ";
+            echo "<td>" .$row1["password"] .  "</td> ";
             echo "<td><a href='admin_home.php?act=edit&id=$row1[0]' class='btn btn-warning btn-xs'>แก้ไข</a></td> ";  
             echo "<td><a href='admin_del.php?id=$row1[0]' onclick=\"return confirm('คุณต้องการลบหรือไม่ !!!')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
         echo "</tr>";
