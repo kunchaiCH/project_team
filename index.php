@@ -4,11 +4,7 @@
 <?php include('bootstrap.php');?>
 </head>
 <body>
-    <?php
-        include('user.php');
-        $user = new User();
-        $profile = $user->get_profile();
-    ?>
+
     <div class="container">
         <div class="col-12 list_navbar">
         <?php include('navbars.php');?>
@@ -20,6 +16,9 @@
             <div class="col-12 list_technician">
                 <p>kunchai</p>
                 <?php
+                include('user.php');
+                $user = new User();
+                $profile = $user->get_profile();
                 if($profile)
                 {
                     foreach($profile as $profile_row){

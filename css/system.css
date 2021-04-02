@@ -3,7 +3,7 @@
     font-family: Kanit;
 }
 .list_navbar{
-    background-color:#343C43;
+    background-color:#434034;
     height: 50px;
     font-family: Kanit;
 }
@@ -14,7 +14,7 @@
 }
 .list_technician{
     background-color: #EEEEEE;
-    /* height: 20cm; */
+    /* height: 50cm;  */
     padding-bottom: 5rem;
 }
 #navbar a {
@@ -55,7 +55,4 @@
 }
 .profile_2{
     background-color: #EEEEEE;
-}
-.container .list_technician  p {
-    color: rgb(240, 13, 13);
 }
