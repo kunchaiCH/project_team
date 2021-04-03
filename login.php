@@ -70,8 +70,8 @@
             <div class="col-sm-12">
                 <select name="txt_role" class="form-control"required placeholder="Enter Select Role">
                     <option value="" selected="selected">- Select Role -</option>
-                    <option value="admin">Admin</option>
-                    <option value="employee">Employee</option>
+                    <option value="admin">admin</option>
+                    <option value="employee">employee</option>
                 </select>
             </div>
         </div>

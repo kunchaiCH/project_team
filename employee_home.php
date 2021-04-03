@@ -35,25 +35,23 @@
 
         </div>
     </div>
-    <div class="container">
-        <div class="col-12 list_navbar">
-            <?php include('navbars_admin.php');?>
-        </div>
-        <div class="row g-0">
-            <div class="col-md-12 list_technician">
-            <?php
-                $act = (isset($_GET['act'])) ? $_GET['act'] : '';
-                if($act == 'add'){ 
-                    include('admin_add.php');
-                }elseif ($act == 'edit') {
-                    include('admin_edit.php');
-                }
-                else {
-                    include('admin_list.php');
-                }
-            ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <?php include('bootstrap.php');?>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-12 list_navbar">
+                <?php include('navbars_Registers.php');?>
             </div>
+            <div class="row g-0">
+                <div class="col-md-12 list_technician">
+                <?php include('profile.php');?>
+                </div>
+                </div>
             </div>
-        </div>
+    </body>
+    </html>
 </body>
 </html>

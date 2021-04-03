@@ -1,11 +1,14 @@
 <?php
 include('condb.php'); 
-$ID = $_REQUEST["id"];
+// $ID = $_REQUEST["id"];
+$email = $_SESSION['employee_login'];
+// echo $email;
 
-$sql = "SELECT * FROM นายช่าง WHERE ID='$ID' ";
+$sql = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE masterlogin.email = '$email'";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
 $row = mysqli_fetch_array($result);
 //print_r($row)
+echo $row['ชื่อ'];
 extract($row);
 ?>
 <?php include('bootstrap.php');?>
