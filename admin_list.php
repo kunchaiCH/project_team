@@ -3,7 +3,7 @@
 <br>
 <a href="admin_home.php?act=add"><button type="button" class="btn btn-secondary">เพิ่มข้อมูล</button></a><p></p>
 <?php
-$query = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username" or die("Error:" . mysqli_error());
+$query = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username" or die("Error:" . mysqli_error($query));
 $result = mysqli_query($con, $query);
 echo ' <table class="table table-dark table-hover">';
 echo '
