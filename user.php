@@ -12,6 +12,20 @@ class User{
             return false;
         }
     }
+    public function git_img(){
+        $username = $_SESSION['userprofile'];
+        // echo $username;
+        include('connecttions.php');
+        $query = "SELECT * FROM นายช่าง  WHERE username = '$username'";
+        $result = mysqli_query($connect, $query)or die ("Error in query: $sql " . mysqli_error($result));
+
+        if($result)
+        {
+            return $result;
+        }else{
+            return false;
+        }
+    }
 
 }
 

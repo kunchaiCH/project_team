@@ -21,13 +21,13 @@ mysqli_close($con); //ปิดการเชื่อมต่อ database
   
 if($result){
     echo "<script>";
-    //echo "alert('Add Succesfuly');";
+    echo "alert('Add Succesfuly');";
     echo "window.location ='employee_home.php'; ";
     echo "</script>";
   } else {
     
     echo "<script>";
-    //echo "alert('ERROR!');";
+    // echo "alert('ERROR!');";
     //echo "window.location ='admin_course_civil.php'; ";
     echo "</script>";
   }

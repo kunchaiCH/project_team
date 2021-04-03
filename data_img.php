@@ -4,7 +4,7 @@ $email = $_SESSION['employee_login'];
 
 
 $sql = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE masterlogin.email = '$email'";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
 $row = mysqli_fetch_array($result);
 //print_r($row)
 extract($row);
@@ -14,14 +14,16 @@ extract($row);
 <div class="container profiles">
   <div class="row">
     <div class="col-md-12 offset-md-2">
-    <form method="POST">
-        <?php echo "<a href='employee_home.php?act=edit' class='btn btn-outline-primary btn-xs'>อัฟโหลด</a> ";?>
+    <form method="POST" action="upload.php" enctype="multipart/form-data">
+      <img src="<?php echo $row["ภาพ"];?>" alt="" width="40mm">
+        <input type="file" name="file">
+        <input type="submit" value="upload" name="submit">
         <div class="col-sm-12">
             <h4>ID : <?=$row['username'];?></h4>
             <h4>สถานะ : <?=$สถานะ;?></h4>
         </div>
     
-</form>        
+    </form>        
 
     </div>
   </div>
