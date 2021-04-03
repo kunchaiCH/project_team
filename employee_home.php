@@ -47,7 +47,14 @@
             </div>
             <div class="row g-0">
                 <div class="col-md-12 list_technician">
-                <?php include('profile.php');?>
+                <?php
+                $act = (isset($_GET['act'])) ? $_GET['act'] : '';
+                if($act == 'edit'){ 
+                    include('data_profileADD.php');
+                }else {
+                    include('profile.php');
+                }
+            ?>
                 </div>
                 </div>
             </div>

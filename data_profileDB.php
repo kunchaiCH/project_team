@@ -5,9 +5,10 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
 
 //สร้างตัวแปรสำหรับรับค่าที่นำมาแก้ไขจากฟอร์ม
   $ID = $_REQUEST["ID"];
+  $username = $_REQUEST["username"];
   $ชื่อ = $_REQUEST["ชื่อ"];
   $นามสกุล = $_REQUEST["นามสกุล"];
-  $อาชีพ = $_REQUEST["อาชีพ"];
+  $ประเภท = $_REQUEST["ประเภท"];
   $ความสามารถ = $_REQUEST["ความสามารถ"];
   $ราคา = $_REQUEST["ราคา"];
   $ที่อยู่ = $_REQUEST["ที่อยู่"];
@@ -15,20 +16,25 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
   $email = $_REQUEST["email"];
   $password = $_REQUEST["password"];
 //ทำการปรับปรุงข้อมูลที่จะแก้ไขลงใน database 
-  
+
   $sql = "UPDATE นายช่าง SET  
       ชื่อ='$ชื่อ' , 
       นามสกุล='$นามสกุล' , 
-      อาชีพ='$อาชีพ' ,
+      ประเภท='$ประเภท' ,
       ความสามารถ='$ความสามารถ' , 
       ราคา='$ราคา' , 
       ที่อยู่='$ที่อยู่' , 
-      เบอร์โทร='$เบอร์โทร' , 
+      เบอร์โทร='$เบอร์โทร' 
+      WHERE username ='$username' ";
+
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+  
+  $sql = "UPDATE masterlogin SET  
       email='$email' , 
       password='$password' 
-      WHERE ID='$ID' ";
+      WHERE username ='$username' ";
 
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
 mysqli_close($con); //ปิดการเชื่อมต่อ database 
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
@@ -36,7 +42,7 @@ mysqli_close($con); //ปิดการเชื่อมต่อ database
   if($result){
   echo "<script type='text/javascript'>";
   //echo "alert('Update');";
-  echo "window.location = 'admin.php'; ";
+  echo "window.location = 'admin_home.php'; ";
   echo "</script>";
   }
   else{
