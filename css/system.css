@@ -51,10 +51,11 @@
 
 .profile_1{
     margin: 50px;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
 }
 .profile_2{
     background-color: #EEEEEE;
+    border-radius: 40px;
 }
 
 #profile{
