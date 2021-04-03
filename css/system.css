@@ -9,7 +9,7 @@
 }
 .list_slide{
     background-color: rgb(255, 255, 255);
-    /* height: 12cm; */
+    height: 12cm;
     font-family: Kanit;
 }
 .list_technician{
@@ -64,5 +64,16 @@
     grid-gap: 10px;
     background: #ffffff;
     font-family: Kanit;
+}
+.list_search .imgsearch{
+    background-image: url('../image/5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 40px;
+}
+.container .searchs{
+    /* background-color: black; */
+    transform: translate(28rem, 0px);
 }
 

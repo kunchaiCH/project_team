@@ -13,6 +13,11 @@
             <div class="col-12 list_slide">
                 <?php include("slide.php");?>
             </div>
+            <div class="col-12 list_search">
+                    <div class="imgsearch">
+                        <?php include("search.php");?>
+                    </div>
+            </div>
             <div class="col-12 list_technician">
                 <div class="col-6 profile">
                     <?php
@@ -30,8 +35,8 @@
                     //  echo"not2";
                     ?>
                 </div>
-
             </div>
+
             </div>
         </div>
 </body>
