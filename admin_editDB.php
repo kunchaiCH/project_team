@@ -13,10 +13,11 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
   $ราคา = $_REQUEST["ราคา"];
   $ที่อยู่ = $_REQUEST["ที่อยู่"];
   $เบอร์โทร = $_REQUEST["เบอร์โทร"];
+  $email = $_REQUEST["email"];
+  $password = $_REQUEST["password"];
 //ทำการปรับปรุงข้อมูลที่จะแก้ไขลงใน database 
-  
+
   $sql = "UPDATE นายช่าง SET  
-      username='$username' , 
       ชื่อ='$ชื่อ' , 
       นามสกุล='$นามสกุล' , 
       ประเภท='$ประเภท' ,
@@ -24,9 +25,16 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
       ราคา='$ราคา' , 
       ที่อยู่='$ที่อยู่' , 
       เบอร์โทร='$เบอร์โทร' 
-      WHERE ID='$ID' ";
+      WHERE username ='$username' ";
 
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+  
+  $sql = "UPDATE masterlogin SET  
+      email='$email' , 
+      password='$password' 
+      WHERE username ='$username' ";
+
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
 mysqli_close($con); //ปิดการเชื่อมต่อ database 
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม

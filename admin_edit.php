@@ -20,10 +20,11 @@ extract($row);
     <div class="col-md-12 offset-md-2">
     <form action="admin_editDB.php" method="POST">
     <input type="hidden" name="ID" value="<?php echo $ID ?>">
+    <input type="hidden" name="username" value="<?php echo $username ?>">
     <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">username</label>
         <div class="col-sm-6">
-            <input type="text" name="username" class="form-control" id="ชื่อ" value="<?=$username;?>">
+            <p name="username"><?=$username;?></p>
         </div>
     </div>
     <div class="row mb-3">
@@ -41,7 +42,21 @@ extract($row);
     <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">อาชีพ</label>
         <div class="col-sm-6">
-            <input type="text" name="ประเภท" class="form-control" id="ประเภท" value="<?=$ประเภท;?>">
+            <!-- <input type="text" name="ประเภท" class="form-control" id="ประเภท" value="<?=$ประเภท;?>"> -->
+            <select name="ประเภท" class="form-control" placeholder="Enter Select Role">
+                    <option value="" selected="selected" ><?=$ประเภท;?></option>
+                    <option>ช่างการประปา</option>
+                    <option>ช่างขุดเจาะน้ำบาดาน</option>
+                    <option>ช่างติดตั้งโซล่าเซลล์</option>
+                    <option>ช่างทาสี</option>
+                    <option>ช่างปูกระเบื้อง</option>
+                    <option>ช่างไฟฟ้า</option>
+                    <option>ช่างยนต์</option>
+                    <option>ช่างก่อสร้าง</option>
+                    <option>ช่างอินเอตร์เน็ต</option>
+                    <option>ช่างแอร์</option>
+                    <option>ช่างฝ่า เพดาน</option>
+            </select>
         </div>
     </div>
     <div class="row mb-3">
