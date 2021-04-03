@@ -56,17 +56,21 @@
 .profile_2{
     background-color: #EEEEEE;
 }
-<<<<<<< HEAD
-/* <<<<<<< HEAD */
 
+/* class profile */
 #profile{
-    width: 50mm;
-    display: grid;
-    grid-gap: 10px;
+    margin-top: 2rem;
+    margin: 2rem auto;
+    width: 95%;
+    display: flex;
     background: #ffffff;
     font-family: Kanit;
 }
-/* =======
->>>>>>> c060150b0b25ac88fedc5915d5d76dc4301ca263 */
-=======
->>>>>>> 1eeca6ec504761887f0150222fb70af75808bf9c
+#profileimg{
+    display: block;
+    margin: 3rem;   
+}
+#profile .text{
+    padding-top: 3rem;
+}
+/* class profile */
