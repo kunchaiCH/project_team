@@ -56,10 +56,14 @@
 .profile_2{
     background-color: #EEEEEE;
 }
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 
 #profile{
+    width: 50mm;
+    display: grid;
+    grid-gap: 10px;
+    background: #ffffff;
     font-family: Kanit;
 }
-=======
->>>>>>> c060150b0b25ac88fedc5915d5d76dc4301ca263
+/* =======
+>>>>>>> c060150b0b25ac88fedc5915d5d76dc4301ca263 */
