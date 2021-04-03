@@ -3,7 +3,7 @@ class User{
     public function get_profile()
     {
         include('connecttions.php');
-        $query = "SELECT * FROM นายช่าง";
+        $query = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.gusername";
         $result = mysqli_query($connect, $query);
         if($result)
         {
