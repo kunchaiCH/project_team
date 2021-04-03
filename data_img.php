@@ -15,8 +15,8 @@ extract($row);
   <div class="row">
     <div class="col-md-12 offset-md-2">
     <form method="POST" action="upload.php" enctype="multipart/form-data">
-      <img src="<?php echo $row["ภาพ"];?>" alt="" width="40mm">
-        <input type="file" name="file">
+      <input type="file" name="file">
+      <img src="<?php echo $row["ภาพ"];?>" alt="" width="100mm"><br>
         <input type="submit" value="upload" name="submit">
         <div class="col-sm-12">
             <h4>ID : <?=$row['username'];?></h4>
