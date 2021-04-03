@@ -1,7 +1,12 @@
-<div class="tor" id="profile">
-    <img id="profileimg" width="100px" src="image/user.jpg"><br>
-    <?php echo $profile_row['ชื่อ'] . " " . $profile_row['นามสกุล'];?><br>
-    <h6>ประเภท <?php echo $profile_row['ประเภท'];?></h6><br>
-    <h6>ความสามารถ <?php echo $profile_row['ความสามารถ'];?></h6><br>
-    <h6>ราคาเริ่มต้น <?php echo $profile_row['ราคา'];?></h6><br>
+<div id="profile">
+    <img id="profileimg" width="100px" src="image/user.jpg">
+    <div class="text">
+        <?php 
+            echo $profile_row['ชื่อ'] . " " . $profile_row['นามสกุล'] ."<br>";
+            echo "ประเภท : " . $profile_row['ประเภท'] ."<br>";
+            echo "ความสามารถ : " . $profile_row['ความสามารถ'] ."<br>";
+            echo "ราคาเริ่มต้น : ". $profile_row['ราคา'] ."<br>";
+        ?>
+    </div>
+
 </div>

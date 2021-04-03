@@ -14,20 +14,23 @@
                 <?php include("slide.php");?>
             </div>
             <div class="col-12 list_technician">
-                <?php
-                include('user.php');
-                $user = new User();
-                $profile = $user->get_profile();
-                if($profile)
-                {
-                    foreach($profile as $profile_row){
-                        
-                        include("profiles.php");
-                        
+                <div class="col-6 profile">
+                    <?php
+                    include('user.php');
+                    $user = new User();
+                    $profile = $user->get_profile();
+                    if($profile)
+                    {
+                        foreach($profile as $profile_row){
+                            
+                            include("profiles.php");
+                            
+                        }
                     }
-                }
-                // echo"not2";
-                ?>
+                    // echo"not2";
+                    ?>
+                </div>
+
             </div>
             </div>
         </div>
