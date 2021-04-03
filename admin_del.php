@@ -7,7 +7,7 @@ $ID = $_REQUEST["id"];
 
 //ลบข้อมูลออกจาก database ตาม member_id ที่ส่งมา
 
-$sql = "DELETE FROM นายช่าง WHERE ID='$ID' ";
+$sql = "DELETE masterlogin,นายช่าง FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE ID ='$ID' ";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
