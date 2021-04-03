@@ -7,7 +7,7 @@ $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_erro
 $row = mysqli_fetch_array($result);
 $username = $row["username"];
 
-$sql = "SELECT * FROM นายช่าง WHERE username='$username' ";
+$sql = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE masterlogin.username='$username' ";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
 $row = mysqli_fetch_array($result);
 //print_r($row)
@@ -66,6 +66,18 @@ extract($row);
         <label for="credit" class="col-sm-2 col-form-label">เบอร์โทร</label>
         <div class="col-sm-6">
             <input type="text" name="เบอร์โทร" class="form-control" id="เบอร์โทร"value="<?=$เบอร์โทร;?>">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="credit" class="col-sm-2 col-form-label">email</label>
+        <div class="col-sm-6">
+            <input type="text" name="email" class="form-control" id="password"value="<?=$email;?>">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="credit" class="col-sm-2 col-form-label">password</label>
+        <div class="col-sm-6">
+            <input type="text" name="password" class="form-control" id="password"value="<?=$password;?>">
         </div>
     </div>
     
