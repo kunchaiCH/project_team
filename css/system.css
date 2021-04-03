@@ -57,21 +57,11 @@
     background-color: #EEEEEE;
 }
 
-/* class profile */
 #profile{
-    margin-top: 2rem;
-    margin: 2rem auto;
-    width: 95%;
-    display: flex;
+    width: 50mm;
+    display: grid;
+    grid-gap: 10px;
     background: #ffffff;
     font-family: Kanit;
 }
-#profileimg{
-    display: block;
-    margin: 3rem;   
-}
-#profile .text{
-    padding-top: 3rem;
-}
-/* class profile */
 

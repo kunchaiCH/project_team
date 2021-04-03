@@ -5,9 +5,16 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
 //สร้างตัวแปรสำหรับรับค่า member_id จากไฟล์แสดงข้อมูล
 $ID = $_REQUEST["id"];
 
+$sql = "SELECT * FROM masterlogin WHERE id ='$ID' ";
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$row = mysqli_fetch_array($result);
+$username = $row["username"];
+echo $username;
 //ลบข้อมูลออกจาก database ตาม member_id ที่ส่งมา
 
-$sql = "DELETE masterlogin,นายช่าง FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE ID ='$ID' ";
+$sql = "DELETE FROM masterlogin WHERE username='$username' ";
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$sql = "DELETE FROM นายช่าง WHERE username='$username' ";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
