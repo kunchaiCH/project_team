@@ -28,8 +28,8 @@
             <hr>
         
             <h3>
-                <?php if(isset($_SESSION['admin_login'])) { ?>
-                Welcome, <?php echo $_SESSION['admin_login']; }?>
+                <?php if(isset($_SESSION['employee_login'])) { ?>
+                Welcome, <?php echo $_SESSION['employee_login']; }?>
             </h3>
             <hr>
 
@@ -46,7 +46,7 @@
                 <?php include('navbars_Registers.php');?>
             </div>
             <div class="row g-0">
-                <div class="col-md-12 list_technician">
+                <div class="col-md-12 list_add">
                 <?php
                 $act = (isset($_GET['act'])) ? $_GET['act'] : '';
                 if($act == 'edit'){ 
@@ -56,8 +56,49 @@
                 }
             ?>
                 </div>
+            </div><hr>
+            <div class="col-12 list_search">
+                    <div class="imgsearch">
+                        <div class="col-7">
+                            <h1 class="text2">ข้อมูลของนายช่างท่านอื่น</h1>
+                        </div>
+                        <?php include("searchs.php");?>
+                    </div>
+            </div>
+            <div class="col-12 list_technician">
+                <div class="col-6 profile">
+                    <?php
+                    include('user.php');
+                    $q = (isset($_GET['q']) ? $_GET['q'] : '');
+                    $user_search = new User();
+                    $search = $user_search->get_search($q);
+
+                    $user = new User();
+                    $profile = $user->get_profile();
+                    
+                    if($q!=''){
+                        if($search)
+                        {
+                            foreach($search as $profile_row){
+                                
+                                include("profiles.php");
+                                
+                            }
+                        }
+                    }else{
+                        if($profile)
+                        {
+                            foreach($profile as $profile_row){
+                                
+                                include("profiles.php");
+                                
+                            }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
+        </div>
     </body>
     </html>
 </body>

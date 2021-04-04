@@ -17,6 +17,10 @@
     /* height: 50cm;  */
     /* padding-bottom: 5rem; */
 }
+.list_add{
+    background-color: #EEEEEE;
+    padding-bottom: 2rem;
+}
 #navbar a {
     float: left;
     display: block;
@@ -80,9 +84,14 @@
     padding: 160px 40px;
     height: 12rem;
 }
+.text2{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    transform: translate(43%, -105px);
+}
 .container .searchs{
     /* background-color: black; */
-    transform: translate(100%, 0px);
+    transform: translate(100%, -80px);
 }
 #imgprofile{
     border: 2px solid #0d6efd;
