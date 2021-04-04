@@ -40,7 +40,7 @@
             <?php include('navbars_admin.php');?>
         </div>
         <div class="row g-0">
-            <div class="col-md-12 list_technician">
+            <div class="col-md-12 list_add">
             <?php
                 $act = (isset($_GET['act'])) ? $_GET['act'] : '';
                 if($act == 'add'){ 
@@ -53,6 +53,9 @@
                 }
             ?>
             </div>
+            </div>
+            <div class="col-12 footers">
+                <?php include("footers.php");?>
             </div>
         </div>
 </body>

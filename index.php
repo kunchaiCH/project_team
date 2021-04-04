@@ -7,16 +7,16 @@
 
     <div class="container">
         <div class="col-12 list_navbar">
-        <?php include('navbars.php');?>
+            <?php include('navbars.php');?>
         </div>
         <div class="row g-0">
             <div class="col-12 list_slide">
                 <?php include("slide.php");?>
             </div>
             <div class="col-12 list_search">
-                    <div class="imgsearch">
-                        <?php include("search.php");?>
-                    </div>
+                <div class="imgsearch">
+                    <?php include("search.php");?>
+                </div>
             </div>
             <div class="col-12 list_technician">
                 <div class="col-6 profile">
@@ -51,9 +51,11 @@
                     ?>
                 </div>
             </div>
-
+            <div class="col-12 footers">
+                <?php include("footers.php");?>
             </div>
         </div>
+    </div>
         
 </body>
 </html>

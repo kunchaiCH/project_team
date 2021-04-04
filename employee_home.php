@@ -98,6 +98,9 @@
                     ?>
                 </div>
             </div>
+            <div class="col-12 footers">
+                <?php include("footers.php");?>
+            </div>
         </div>
     </body>
     </html>
