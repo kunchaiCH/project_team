@@ -72,9 +72,10 @@
                     $q = (isset($_GET['q']) ? $_GET['q'] : '');
                     $user_search = new User();
                     $search = $user_search->get_search($q);
+                    
 
                     $user = new User();
-                    $profile = $user->get_profile();
+                    $profile = $user->get_listprofile($username);
                     
                     if($q!=''){
                         if($search)
