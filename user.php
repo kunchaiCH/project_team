@@ -26,6 +26,18 @@ class User{
             return false;
         }
     }
+    public function get_search($q){
+        include('connecttions.php');
+        $query = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE ชื่อ LIKE '%$q%' OR นามสกุล LIKE '%$q%' OR ประเภท LIKE '%$q%' OR ราคา LIKE '%$q%'";
+        $result = mysqli_query($connect, $query)or die ("Error in query: $sql " . mysqli_error($result));
+
+        if($result)
+        {
+            return $result;
+        }else{
+            return false;
+        }
+    }
 
 }
 
