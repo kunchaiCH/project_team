@@ -21,6 +21,10 @@
     background-color: #EEEEEE;
     padding-bottom: 2rem;
 }
+.footers{
+    font-family: Kanit;
+    background-color: #70818F;
+}
 #navbar a {
     float: left;
     display: block;
@@ -98,3 +102,4 @@
     overflow: hidden;
     border-radius: 50%;
 }
+
