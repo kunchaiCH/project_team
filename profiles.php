@@ -10,6 +10,7 @@
             echo "ที่อยู่ : " . $profile_row['ที่อยู่'] ."<br>";
             echo "เบอร์โทร : " . $profile_row['เบอร์โทร'] ."<br>";
             echo "ราคาเริ่มต้น : ". $profile_row['ราคา'] ."<br>";
+            echo "สถานะช่าง : ". $profile_row['สถานะ'] ."<br>";
         ?>
     </div>
 

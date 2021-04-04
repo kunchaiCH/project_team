@@ -19,9 +19,9 @@ $sql ="INSERT INTO นายช่าง
 
     VALUES 
 
-    ('$username', '$ชื่อ', '$นามสกุล', '$ประเภท', '$ความสามารถ', '$ราคา', '$ที่อยู่', '$เบอร์โทร', 'uploadpicture/50142-illustration-graph.gif')";
+    ('$username', '$ชื่อ', '$นามสกุล', '$ประเภท', '$ความสามารถ', '$ราคา', '$ที่อยู่', '$เบอร์โทร', 'uploadpicture/user.png')";
     
-    $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+    $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
     // mysqli_close($con);
     
 
@@ -33,7 +33,7 @@ $sql ="INSERT INTO masterlogin
 
     ('$username', '$email', '$password', '$role')";
     
-    $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+    $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
     mysqli_close($con);
 
     if($result){
