@@ -30,7 +30,7 @@
 
         <div class="form-group">
             <div class="col-sm-12 mt-3">
-                <input type="submit" name="btn_status" class="btn btn-success" style="width: 100%;" value="Login">
+                <input type="submit" name="btn_status" class="btn btn-success" style="width: 100%;" value="ยืนยันการเปลี่ยนสถานะ">
             </div>
         </div>
         </form>

@@ -14,10 +14,8 @@ extract($row);
 <div class="container profiles">
   <div class="row">
     <div class="col-md-12 offset-md-2">
-    <form method="POST" action="upload.php" enctype="multipart/form-data">
-      <input type="file" name="file">
       <img src="<?php echo $row["ภาพ"];?>" alt="" width="100mm"><br>
-        <input type="submit" value="upload" name="submit">
+      <?php include("uploadprofile.php");?>
         <div class="col-sm-12">
             <h4>ID : <?=$row['username'];?></h4>
             <h4>สถานะ : <?=$สถานะ;?></h4>

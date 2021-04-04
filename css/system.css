@@ -41,7 +41,6 @@
     width: 100%;
 } */
 .container .img1{
-    /* background-color: #343C43; */
     background-image: url('../image/4.png');
     background-position: center;
     background-size: cover;
@@ -79,13 +78,3 @@
     /* background-color: black; */
     transform: translate(28rem, 0px);
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
-

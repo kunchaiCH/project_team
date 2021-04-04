@@ -12,7 +12,7 @@
             <label for="inputState" class="form-label">Select Type</label>
             <select name="role" class="form-control"required placeholder="Enter Select Role">
                     <option value="" selected="selected">- Select Role -</option>
-                    <option>Employee</option>
+                    <option>employee</option>
             </select>
         </div>
         <div class="col-md-6">

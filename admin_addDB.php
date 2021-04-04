@@ -15,11 +15,11 @@ $password = $_POST['password'];
 
 $sql ="INSERT INTO นายช่าง
     
-    (username, ชื่อ, นามสกุล, ประเภท, ความสามารถ, ราคา, ที่อยู่, เบอร์โทร) 
+    (username, ชื่อ, นามสกุล, ประเภท, ความสามารถ, ราคา, ที่อยู่, เบอร์โทร, ภาพ) 
 
     VALUES 
 
-    ('$username', '$ชื่อ', '$นามสกุล', '$ประเภท', '$ความสามารถ', '$ราคา', '$ที่อยู่', '$เบอร์โทร')";
+    ('$username', '$ชื่อ', '$นามสกุล', '$ประเภท', '$ความสามารถ', '$ราคา', '$ที่อยู่', '$เบอร์โทร', 'uploadpicture/50142-illustration-graph.gif')";
     
     $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
     // mysqli_close($con);
