@@ -17,9 +17,7 @@
 <a href="#" class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
 
 <!-- Modal -->
-<<<<<<< HEAD
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
-=======
+
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="ture">
 >>>>>>> e4b16d794dac36802f6b8388c7850d215ec13174
   <div class="modal-dialog">
