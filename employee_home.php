@@ -58,7 +58,7 @@
                 </div>
             </div><hr>
             <div class="col-12 list_search">
-                    <div class="imgsearch">
+                    <div class="imgsearchs">
                         <div class="col-7">
                             <h1 class="text2">ข้อมูลของนายช่างท่านอื่น</h1>
                         </div>
@@ -66,7 +66,8 @@
                     </div>
             </div>
             <div class="col-12 list_technician">
-                <div class="col-6 profile">
+                <div class="col-12 profile">
+                    <div class="row">
                     <?php
                     include('user.php');
                     $q = (isset($_GET['q']) ? $_GET['q'] : '');
@@ -97,6 +98,7 @@
                         }
                     }
                     ?>
+                    </div>
                 </div>
             </div>
             <div class="col-12 footers">

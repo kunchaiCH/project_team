@@ -6,7 +6,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="image/1.jpg" class="d-block w-100" alt="...">
+      <img src="image/1.jpg" class="d-block w-100"  alt="...">
     </div>
     <div class="carousel-item">
       <img src="image/2.jpg" class="d-block w-100" alt="...">
@@ -28,7 +28,7 @@
 <div id="slide">
 <div class="contact text-center slide_S">
   <h4>ติดต่อ หาช่าง</h4>
-  <h7>ต้องการช่างเฉพาะทาง หาช่างไฟ ช่างประปา ช่างแอร์ ฯลฯ </h7><br>
-  <h7>ต้องการช่างคิดถึงเรา</h7>
+  <p>ต้องการช่างเฉพาะทาง หาช่างไฟ ช่างประปา ช่างแอร์ ฯลฯ<br>ต้องการช่างคิดถึงเรา </p>
+  <hr>
 </div>
 </div>
