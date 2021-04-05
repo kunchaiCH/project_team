@@ -14,7 +14,7 @@ $สถานะ = $_POST['สถานะ'];
       สถานะ='$สถานะ' 
       WHERE username ='$username'";
 
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 mysqli_close($con); //ปิดการเชื่อมต่อ database 
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม

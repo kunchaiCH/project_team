@@ -15,7 +15,7 @@ if ($_FILES['file']['type']=="image/jpeg" || $_FILES['file']['type']=="image/png
 
   if (move_uploaded_file($_FILES["file"]["tmp_name"],$fileimage)){
       echo "uploaded";
-      $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+      $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
       mysqli_close($con);
       if($result){
           echo "<script>";

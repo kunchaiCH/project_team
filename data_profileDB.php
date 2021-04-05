@@ -27,14 +27,14 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
       เบอร์โทร='$เบอร์โทร' 
       WHERE username ='$username' ";
 
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
   
   $sql = "UPDATE masterlogin SET  
       email='$email' , 
       password='$password' 
       WHERE username ='$username' ";
 
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 mysqli_close($con); //ปิดการเชื่อมต่อ database 
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม

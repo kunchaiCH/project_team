@@ -6,16 +6,16 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
 $ID = $_REQUEST["id"];
 
 $sql = "SELECT * FROM masterlogin WHERE id ='$ID' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 $row = mysqli_fetch_array($result);
 $username = $row["username"];
 echo $username;
 //ลบข้อมูลออกจาก database ตาม member_id ที่ส่งมา
 
 $sql = "DELETE FROM masterlogin WHERE username='$username' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 $sql = "DELETE FROM นายช่าง WHERE username='$username' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 
 //จาวาสคริปแสดงข้อความเมื่อบันทึกเสร็จและกระโดดกลับไปหน้าฟอร์ม
   

@@ -4,7 +4,7 @@ $email = $_SESSION['employee_login'];
 
 
 $sql = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE masterlogin.email = '$email'";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 $row = mysqli_fetch_array($result);
 //print_r($row)
 extract($row);

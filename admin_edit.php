@@ -3,12 +3,12 @@ include('condb.php');
 $ID = $_REQUEST["id"];
 // echo $ID;
 $sql = "SELECT * FROM masterlogin WHERE id ='$ID' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 $row = mysqli_fetch_array($result);
 $username = $row["username"];
 
 $sql = "SELECT * FROM masterlogin INNER JOIN นายช่าง ON masterlogin.username = นายช่าง.username WHERE masterlogin.username='$username' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($result));
+$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error($con));
 $row = mysqli_fetch_array($result);
 //print_r($row)
 extract($row);
