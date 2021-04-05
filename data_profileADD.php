@@ -40,7 +40,7 @@ extract($row);
         <div class="col-sm-6">
             <!-- <input type="text" name="ประเภท" class="form-control" id="ประเภท" value="<?=$ประเภท;?>"> -->
             <select name="ประเภท" class="form-control" placeholder="Enter Select Role">
-                    <option value="" selected="selected" ><?=$ประเภท;?></option>
+                    <option value="<?=$ประเภท;?>" selected="selected" ><?=$ประเภท;?></option>
                     <option>ช่างการประปา</option>
                     <option>ช่างขุดเจาะน้ำบาดาน</option>
                     <option>ช่างติดตั้งโซล่าเซลล์</option>
