@@ -49,7 +49,11 @@
                         }
                     } else {
                         $_SESSION['error'] = "Wrong email or password or role";
-                        header("location: index.php");
+                        // header("location: index.php");
+                        echo "<script type='text/javascript'>";
+                        echo "alert('Wrong email or password');";
+                        echo "window.location = 'index.php'; ";
+                        echo "</script>";
                     }
                 }
             } catch(PDOException $e) {

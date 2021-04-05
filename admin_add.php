@@ -55,11 +55,11 @@
         </div>
         <div class="col-md-6">
             <label for="validationDefault05" class="form-label">เบอร์โทรศัพท์</label>
-            <input type="text" name="เบอร์โทร" class="form-control"required>
+            <input type="tel" pattern="\d{10}"  name="เบอร์โทร"  class="form-control"required>
         </div><br>
         <div class="col-md-6">
             <label for="validationDefault05" class="form-label">email</label>
-            <input type="text" name="email" class="form-control"required>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control"required>
         </div><br>
         <div class="col-md-6">
             <label for="validationDefault05" class="form-label">password</label>

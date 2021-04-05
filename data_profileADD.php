@@ -76,19 +76,19 @@ extract($row);
     <div class="row mb-3">
         <label for="credit" class="col-sm-2 col-form-label">เบอร์โทร</label>
         <div class="col-sm-6">
-            <input type="text" name="เบอร์โทร" class="form-control" id="เบอร์โทร"value="<?=$เบอร์โทร;?>">
+            <input type="tel" pattern="\d{10}" name="เบอร์โทร" class="form-control" id="เบอร์โทร"value="<?=$เบอร์โทร;?>">
         </div>
     </div>
     <div class="row mb-3">
         <label for="credit" class="col-sm-2 col-form-label">email</label>
         <div class="col-sm-6">
-            <input type="text" name="email" class="form-control" id="password"value="<?=$email;?>">
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-control" id="password"value="<?=$email;?>">
         </div>
     </div>
     <div class="row mb-3">
         <label for="credit" class="col-sm-2 col-form-label">password</label>
         <div class="col-sm-6">
-            <input type="text" name="password" class="form-control" id="password"value="<?=$password;?>">
+            <input type="password" name="password" class="form-control" id="password"value="<?=$password;?>">
         </div>
     </div>
     
