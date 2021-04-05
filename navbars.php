@@ -1,5 +1,6 @@
+
 <div id="navbar">
-    <div class="navbar">
+    <div class="navbar" data-spy="affix" data-offset-top="197">
       <a class="active" href="index.php">T-Search</a>
       <div class="topnav-right">
         <?php include("login.php");?>

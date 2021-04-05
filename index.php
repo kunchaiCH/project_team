@@ -7,7 +7,7 @@
 
     <div class="container">
         <div class="col-12 list_navbar">
-            <?php include('navbars.php');?>
+        <?php include('navbars.php');?>
         </div>
         <div class="row g-0">
             <div class="col-12 list_slide">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-12 list_technician">
-                <div class="col-6 profile">
+                <div class="col-12 profile">
                     <?php
                     include('user.php');
                     $q = (isset($_GET['q']) ? $_GET['q'] : '');

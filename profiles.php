@@ -1,6 +1,6 @@
 <div id="profile">
     
-    <img id="profileimg" width="100px" src="<?php echo $profile_row['ภาพ'];?>">
+    <img id="profileimg" width="200mm" src="<?php echo $profile_row['ภาพ'];?>">
     <div class="text">
         <?php 
             echo $profile_row['ชื่อ'] . " " . $profile_row['นามสกุล'] ."<br>";

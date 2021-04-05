@@ -2,6 +2,7 @@
     src: url(font/Kanit-Regular);
     font-family: Kanit;
 }
+ิ.body { padding-top: 70px; }
 .list_navbar{
     background-color:#343C43;
     height: 50px;
@@ -14,6 +15,7 @@
 }
 .list_technician{
     background-color: #EEEEEE;
+    display: flex;
     /* height: 50cm;  */
     /* padding-bottom: 5rem; */
 }
@@ -74,11 +76,15 @@
 }
 
 #profile{
-    width: 50mm;
-    display: grid;
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
     grid-gap: 10px;
     background: #ffffff;
     font-family: Kanit;
+}
+#profileimg{
+    padding: 10px;
 }
 .list_search .imgsearch{
     background-image: url('../image/5.png');
@@ -102,4 +108,3 @@
     overflow: hidden;
     border-radius: 50%;
 }
-
